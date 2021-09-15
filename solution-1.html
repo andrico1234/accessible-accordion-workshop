@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: Montserrat, sans-serif;
+      }
+
+      h1 {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+      }
+
+      .accordion {
+        margin: 24px;
+        width: 400px;
+        border-bottom: 1px solid black;
+      }
+
+      .title {
+        font-size: 2em;
+        border: none;
+        border-top: 1px solid black;
+        text-align: left;
+        background: none;
+        width: 100%;
+      }
+
+      .content {
+        display: none;
+      }
+
+      .content.visible {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Accessible accordion</h1>
+
+    <div class="accordion">
+      <button class="title">Section 1</button>
+      <div class="content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lacinia
+        nisl vel ipsum laoreet euismod. Suspendisse justo est, faucibus sed
+        dictum eu, posuere at orci. Suspendisse ex magna, pulvinar nec suscipit
+        porta, mattis eget arcu. Phasellus odio enim, porta vitae mi eu, maximus
+        tincidunt lorem. Interdum et malesuada fames ac ante ipsum primis in
+        faucibus.
+      </div>
+      <button class="title">Section 2</button>
+      <div class="content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lacinia
+        nisl vel ipsum laoreet euismod. Suspendisse justo est, faucibus sed
+        dictum eu, posuere at orci. Suspendisse ex magna, pulvinar nec suscipit
+        porta, mattis eget arcu. Phasellus odio enim, porta vitae mi eu, maximus
+        tincidunt lorem. Interdum et malesuada fames ac ante ipsum primis in
+        faucibus.
+      </div>
+      <button class="title">Section 3</button>
+      <div class="content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lacinia
+        nisl vel ipsum laoreet euismod. Suspendisse justo est, faucibus sed
+        dictum eu, posuere at orci. Suspendisse ex magna, pulvinar nec suscipit
+        porta, mattis eget arcu. Phasellus odio enim, porta vitae mi eu, maximus
+        tincidunt lorem. Interdum et malesuada fames ac ante ipsum primis in
+        faucibus.
+      </div>
+      <button class="title">Section 4</button>
+      <div class="content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lacinia
+        nisl vel ipsum laoreet euismod. Suspendisse justo est, faucibus sed
+        dictum eu, posuere at orci. Suspendisse ex magna, pulvinar nec suscipit
+        porta, mattis eget arcu. Phasellus odio enim, porta vitae mi eu, maximus
+        tincidunt lorem. Interdum et malesuada fames ac ante ipsum primis in
+        faucibus.
+      </div>
+    </div>
+
+    <script>
+      const headings = document.querySelectorAll(".title");
+
+      headings.forEach((heading) => {
+        const currentBlock = heading.nextElementSibling;
+
+        heading.addEventListener("click", () => {
+          const isOpen = currentBlock.classList.contains("visible");
+
+          if (!isOpen) {
+            currentBlock.classList.add("visible");
+          } else {
+            currentBlock.classList.remove("visible");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
