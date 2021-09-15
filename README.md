@@ -85,8 +85,6 @@ The `aria-expanded` can be used to indicate whether an accordion's section is cu
 
 This attribute can be placed on either the content itself, or the button that controls the expanded/collapsed state. It's common practice to add `aria-expanded` to the controlling element, as adding it to the content will be redundant if the content is removed from the DOM when hidden.
 
-This means you'll need to add the `aria-controls` attribute to the button, and pass it an idea of the element it controls.
-
 #### c) Remove use of classes to manage element visibility
 
 CSS Pro tip:
