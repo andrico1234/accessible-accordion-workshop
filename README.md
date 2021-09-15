@@ -143,7 +143,7 @@ b) ensure that your markup is semantic under both scenarios
 
 ## Resources
 
-[Inclusive Components: Collapsible Sections](https://inclusive-components.design/collapsible-sections/)
-[ARIA authoring guides: Accordions](https://www.w3.org/TR/wai-aria-practices-1.1/examples/accordion/accordion.html)
-[HTML Spec: The tabindex attribute](https://html.spec.whatwg.org/multipage/interaction.html#the-tabindex-attribute)
-[Introduction to progressive enhancment](https://www.smashingmagazine.com/2009/04/progressive-enhancement-what-it-is-and-how-to-use-it/)
+- [Inclusive Components: Collapsible Sections](https://inclusive-components.design/collapsible-sections/)
+- [ARIA authoring guides: Accordions](https://www.w3.org/TR/wai-aria-practices-1.1/examples/accordion/accordion.html)
+- [HTML Spec: The tabindex attribute](https://html.spec.whatwg.org/multipage/interaction.html#the-tabindex-attribute)
+- [Introduction to progressive enhancment](https://www.smashingmagazine.com/2009/04/progressive-enhancement-what-it-is-and-how-to-use-it/)
