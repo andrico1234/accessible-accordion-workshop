@@ -28,6 +28,8 @@ Improve the initial accordion so that it satisfies the following requirements.
 
 - Accordion should function without JavaScript
 
+---
+
 ### Task 1: Accordion is operable via a keyboard
 
 Currently, our accordion can only be operated by mouse. It's important for our controls to be operable through other means, like keyboard and assistive technologies.
@@ -55,6 +57,8 @@ hedNote: Using elements like `<div>`s to implement interactive behaviour should 
 Note: Using a `<button>` will require a few css changes.
 
 See `solution-1.html` for a solution. Yours may be written differently, and still be accessible.
+
+---
 
 ### Task 2: Accordion should utilise semantic markup
 
@@ -111,13 +115,15 @@ It also means you no longer have to manage different css classes using `containe
 
 Why not try and remove our calls to `currentBlock.classList.add("visible");` by using the built-in [`hidden` HTML](https://html.spec.whatwg.org/multipage/interaction.html#the-hidden-attribute) attribute.
 
+---
+
 ### Task 3: Progressive Enhancement (advanced)
 
 Progressive enhancement is the focus on building web experiences with a solid foundation, and then adding enhancements on top of that foundation. In the context of an accordion, it would mean ensuring that all content is perceivable before we add our styles and interactivity.
 
 Since the accordion hides child content by default, and can only be displayed using JavaScript, what happens if someone tries to use our accordion, and JavaScript isn't enabled.
 
-Note: To disabled JavaScript in your browser follow the steps:
+Note: To disable JavaScript in your browser follow the steps:
 
 - open up your Chrome browser console
 - use cmd + shift + p to open up the command palette
