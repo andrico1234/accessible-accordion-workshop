@@ -11,18 +11,8 @@ The goal of this session is to create an accordion that:
 
 ## Terminology
 
-WCAG - Web Content Accessibility Guidelines
-Semantic HTML - HTML elements that provide information about its content to the browser.
-
-## Divs vs Buttons
-
-Buttons are an element that provides interactive behaviour out of the box.
-
-- onclick
-- focus management
-- form integration
-- disabled states
-- provide additional semantic behaviour out of the box
+- WCAG - Web Content Accessibility Guidelines
+- Semantic HTML - HTML elements that provide information about its content to the browser.
 
 ## Tasks
 
